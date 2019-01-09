@@ -29,18 +29,7 @@
         'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
         'scope': 'https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/youtubepartner'
     }).then(function () {
-      GoogleAuth = gapi.auth2.getAuthInstance();
-
-      // Listen for sign-in state changes.
-      GoogleAuth.isSignedIn.listen(updateSigninStatus);
-
-      // Handle initial sign-in state. (Determine if user is already signed in.)
-      setSigninStatus();
-
-      $('#execute-request-button').click(function() {
-        defineRequest();
-      }); 
-
+     
       $('#execute-search-button').click(function() {
         updateInput();
         defineRequest();
@@ -49,24 +38,6 @@
     });
   }
 
-  function handleAuthClick(event) {
-    // Sign user in after click on auth button.
-    GoogleAuth.signIn();
-  }
-
-  function setSigninStatus() {
-    var user = GoogleAuth.currentUser.get();
-    isAuthorized = user.hasGrantedScopes('https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/youtubepartner');
-    // Toggle button text and displayed statement based on current auth status.
-    if (isAuthorized) {
-      //defineRequest();
-      console.log("Hello world");
-    }
-  }
-
-  function updateSigninStatus(isSignedIn) {
-    setSigninStatus();
-  }
 
   function createResource(properties) {
     var resource = {};
@@ -156,8 +127,6 @@ buildApiRequest('GET',
     console.log(search_term);
   }
 </script>
-
-<button id="execute-request-button">Test</button>
 
 <section>
 	<div class="container">
