@@ -8,7 +8,7 @@
 
   // Global variables for GoogleAuth object, auth status.
   var GoogleAuth;
-  const search_term = document.getElementById('search-input');
+  var search_term = document.getElementById('search-input');
 
 
   /**
@@ -37,11 +37,15 @@
       // Handle initial sign-in state. (Determine if user is already signed in.)
       setSigninStatus();
 
-      // Call handleAuthClick function when user clicks on "Authorize" button.
       $('#execute-request-button').click(function() {
-        //handleAuthClick(event);
         defineRequest();
       }); 
+
+      $('#execute-search-button').click(function() {
+        updateInput();
+        defineRequest();
+      });
+
     });
   }
 
@@ -144,6 +148,10 @@ buildApiRequest('GET',
                  'q': 'red sox',
                  'type': ''});
 
+  }
+
+  function updateInput(){
+    search_term = document.getElementById('search-input');
   }
 </script>
 
