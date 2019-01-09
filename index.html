@@ -42,14 +42,6 @@
         //handleAuthClick(event);
         defineRequest();
       }); 
-      /*
-      $('#execute-search-button').click(function() {
-        //handleAuthClick(event);
-        defineRequest();
-      });
-      */
-
-
     });
   }
 
@@ -149,7 +141,7 @@ buildApiRequest('GET',
                 '/youtube/v3/search',
                 {'maxResults': '25',
                  'part': 'snippet',
-                 'q': search_term,
+                 'q': 'red sox',
                  'type': ''});
 
   }
@@ -165,7 +157,7 @@ buildApiRequest('GET',
 					<form id="search-form">
 						<div class="input-field">
 							<input type="text" placeholder="Enter search terms" id="search-input">
-							<input type="submit" value="Search" class="btn grey lighten-2" id ="execute-search-button">
+							<input type="submit" value="Search" class="btn grey lighten-2" id = "execute-search-button">
 						</div>
 					</form>
 				</div>
