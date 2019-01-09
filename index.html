@@ -59,7 +59,8 @@
     isAuthorized = user.hasGrantedScopes('https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/youtubepartner');
     // Toggle button text and displayed statement based on current auth status.
     if (isAuthorized) {
-      defineRequest();
+      //defineRequest();
+      console.log("Hello world");
     }
   }
 
@@ -145,7 +146,7 @@ buildApiRequest('GET',
                 '/youtube/v3/search',
                 {'maxResults': '25',
                  'part': 'snippet',
-                 'q': 'red sox',
+                 'q': search_term,
                  'type': ''});
 
   }
