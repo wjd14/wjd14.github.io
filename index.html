@@ -146,7 +146,7 @@ buildApiRequest('GET',
                 '/youtube/v3/search',
                 {'maxResults': '25',
                  'part': 'snippet',
-                 'q': search_term,
+                 'q': search_term.value,
                  'type': ''});
 
   }
