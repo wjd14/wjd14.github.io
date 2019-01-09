@@ -42,6 +42,14 @@
         //handleAuthClick(event);
         defineRequest();
       }); 
+
+      $('#execute-search-button').click(function() {
+        //handleAuthClick(event);
+        defineRequest();
+      });
+
+
+
     });
   }
 
@@ -141,7 +149,7 @@ buildApiRequest('GET',
                 '/youtube/v3/search',
                 {'maxResults': '25',
                  'part': 'snippet',
-                 'q': 'red sox',
+                 'q': search_term,
                  'type': ''});
 
   }
