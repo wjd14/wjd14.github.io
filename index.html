@@ -122,7 +122,19 @@ function buildAndMakeApiRequest(requestMethod, path, params, properties) {
           'params': params
       }).then(function(resp) {
         logResults(resp);
-        displaySearchResults(resp);
+        
+        const output = `
+        <ul class="collection">
+          <li class="collection-item">Thumbnail: ${resp[0].snippet.thumbnails.default.url}</li>
+          <li class="collection-item">ChannelName: ${resp[0].snippet.channelTitle}</li>
+          <li class="collection-item">Title: ${resp[0].snippet.title}</li>
+          <li class="collection-item">Date: ${resp[0].snippet.publishedAt}</li>
+        </ul>
+        <p>${resp[0].snippet.description}</p>
+        
+      `;
+        
+        showResults(output);
       });
     
     
@@ -132,11 +144,7 @@ function logResults(response){
   console.log(response.result.items[0]);
   console.log("Success");
 }
-function displaySearchResults(response) {
 
-  document.getElementById('search-input').src = "https://cdn.vox-cdn.com/thumbor/-bKrYahnwqww9sH9v2h34v9ViA0=/0x114:585x559/1200x800/filters:focal(248x297:340x389)/cdn.vox-cdn.com/uploads/chorus_image/image/57272301/Screen_Shot_2017_10_23_at_10.16.32_AM.0.png";
-
-}
   /***** END BOILERPLATE CODE *****/
 
   
@@ -144,27 +152,24 @@ function displaySearchResults(response) {
     // See full sample for buildApiRequest() code, which is not 
 // specific to a particular API or API method.
 
-buildAndMakeApiRequest('GET',
+    buildAndMakeApiRequest('GET',
                 '/youtube/v3/search',
                 {'maxResults': '25',
                  'part': 'snippet',
                  'q': search_term.value,
                  'type': ''});
 
-  }
+    }
 
   function updateInput(){
     search_term = document.getElementById('search-input');
     console.log('Searched for: ', search_term.value);
+  } 
+
+  function showResults(data){
+    const searchData = document.getElementById('search-data');
+    searchData.innerHTML = data;
   }
-  
-  
-
-
-    
-  
-
-  
 </script>
 
 <section>
@@ -190,12 +195,6 @@ buildAndMakeApiRequest('GET',
   <button id="execute-search-button">Search</button>
 
 
- </section>
-
- <section>
-    <div>
-      <img id="first-video">
-    </div>
  </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
