@@ -156,19 +156,9 @@ buildAndMakeApiRequest('GET',
   }
   
   
-  window.onload=function(){
+
   
 
-    var input = document.getElementById("search-input");
-      input.addEventListener("keyup", function(event) {
-      event.preventDefault();
-      // Number 13 is the "Enter" key on the keyboard
-      if (event.keyCode === 13) {
-      // Trigger the button element with a click
-      document.getElementById("execute-search-button").click();
-      }
-    });
-  }
   
 </script>
 
@@ -201,5 +191,21 @@ buildAndMakeApiRequest('GET',
 <script async defer src="https://apis.google.com/js/api.js" 
         onload="this.onload=function(){};handleClientLoad()" 
         onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+
+<script>
+
+    var input = document.getElementById("search-input");
+      input.addEventListener("keyup", function(event) {
+      event.preventDefault();
+      // Number 13 is the "Enter" key on the keyboard
+      if (event.keyCode === 13) {
+      // Trigger the button element with a click
+      document.getElementById("execute-search-button").click();
+      }
+    });
+  
+
+
 </script>
 </body></html>
