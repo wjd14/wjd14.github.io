@@ -129,6 +129,8 @@ function buildAndMakeApiRequest(requestMethod, path, params, properties) {
 
 function logResults(response){
   console.log(response.result.items[0]);
+  console.log(response.result.items[1]);
+  console.log(response.result.items[2]);
   console.log("right version");
 }
 
@@ -152,6 +154,17 @@ buildAndMakeApiRequest('GET',
     search_term = document.getElementById('search-input');
     console.log('Searched for: ', search_term.value);
   }
+
+  var input = document.getElementById("search-input");
+
+  input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("execute-search-button").click();
+  }
+});
 </script>
 
 <section>
@@ -172,6 +185,8 @@ buildAndMakeApiRequest('GET',
 
   </div>
   
+
+
   <button id="execute-search-button">Search</button>
 
 
