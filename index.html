@@ -123,18 +123,7 @@ function buildAndMakeApiRequest(requestMethod, path, params, properties) {
       }).then(function(resp) {
         logResults(resp);
         
-        const output = `
-        <ul class="collection">
-          <li class="collection-item">Thumbnail: ${resp[0].snippet.thumbnails.default.url}</li>
-          <li class="collection-item">ChannelName: ${resp[0].snippet.channelTitle}</li>
-          <li class="collection-item">Title: ${resp[0].snippet.title}</li>
-          <li class="collection-item">Date: ${resp[0].snippet.publishedAt}</li>
-        </ul>
-        <p>${resp[0].snippet.description}</p>
-        
-      `;
-        
-        showResults(output);
+        showResults(resp);
       });
     
     
@@ -167,6 +156,21 @@ function logResults(response){
   } 
 
   function showResults(data){
+
+    var first = data.results.items[0];
+
+    const output = `
+        <ul class="collection">
+          <li class="collection-item">Thumbnail: ${first.snippet.thumbnails.default.url}</li>
+          <li class="collection-item">ChannelName: ${first.snippet.channelTitle}</li>
+          <li class="collection-item">Title: ${first.snippet.title}</li>
+          <li class="collection-item">Date: ${first.snippet.publishedAt}</li>
+        </ul>
+        <p>${first.snippet.description}</p>
+        
+      `;
+
+
     const searchData = document.getElementById('search-data');
     searchData.innerHTML = data;
   }
