@@ -9,7 +9,7 @@
   // Global variables for GoogleAuth object, auth status.
   var GoogleAuth;
   var search_term = document.getElementById('search-input');
-
+  var array_of_results;
 
   /**
    * Load the API's client and auth2 modules.
@@ -83,6 +83,8 @@
     request.execute(function(response) {
       console.log(response);
     });
+    array_of_results = JSON.parse(response);
+    console.log(array_of_results);
   }
 
   function buildApiRequest(requestMethod, path, params, properties) {
