@@ -198,7 +198,7 @@ buildAndMakeApiRequest('GET',
 
 
 var input = document.getElementById("search-input");
-      input.addEventListener("keyup", function(event) {
+      input.addEventListener("keydown", function(event) {
       event.preventDefault();
       // Number 13 is the "Enter" key on the keyboard
       if (event.keyCode === 13) {
