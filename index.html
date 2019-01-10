@@ -108,6 +108,29 @@
     executeRequest(request);
   }
 
+/************MY VERSION***************/
+
+function buildAndMakeApiRequest(requestMethod, path, params, properties) {
+    params = removeEmptyParams(params);
+    var request;
+    
+      var resource = createResource(properties);
+      gapi.client.request({
+          'body': resource,
+          'method': requestMethod,
+          'path': path,
+          'params': params
+      }).then(function(resp) {
+        logResults(resp);
+      });
+    
+    
+  }
+
+function logResults(response){
+  console.log(response.result);
+}
+
   /***** END BOILERPLATE CODE *****/
 
   
@@ -115,7 +138,7 @@
     // See full sample for buildApiRequest() code, which is not 
 // specific to a particular API or API method.
 
-buildApiRequest('GET',
+buildAndMakeApiRequest('GET',
                 '/youtube/v3/search',
                 {'maxResults': '25',
                  'part': 'snippet',
