@@ -175,18 +175,7 @@ function logResults(response){
       `;
       */
      var i;
-     var output = `
-     .flexcontainer {
-      display: flex;
-      align-items: center;
-    }
-    @media (max-width: 320px) {
-      .flexcontainer {
-      display: block;
-      }
-    }
-     
-      `;
+     var output = ``;
      for(i = 0; i < 24; i++){
        console.log('its working');
        var info = data.result.items[i];
@@ -194,7 +183,7 @@ function logResults(response){
        output = output + `
        <div class="flexcomtainer">
         <div>
-          <img src= ${imurl} height="320" width="180">
+          <img src= ${imurl} height="180" width="320">
         </div>
         <div>
           <ul class="collection">
