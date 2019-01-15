@@ -181,7 +181,7 @@ function logResults(response){
        var info = data.result.items[i];
        var imurl = String(info.snippet.thumbnails.default.url);
        output = output + `
-       <div class="flexcomtainer">
+       
         <div>
           <img src= ${imurl} height="180" width="320">
         </div>
@@ -194,7 +194,7 @@ function logResults(response){
           </ul>
         <p>${info.snippet.description}</p>
         </div>
-      </div>
+        <br><br>
       `;
      }
       
