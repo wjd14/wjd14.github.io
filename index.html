@@ -182,7 +182,7 @@ function logResults(response){
        output = output + `
        
        <div style="display:inline;text-align:left; ">
-          <img src= ${imurl} height="120" width="213">
+          <img src= ${imurl} height="180" width="320">
         
         <div style="float: right">
           <ul class="collection">
@@ -190,8 +190,8 @@ function logResults(response){
             <li class="collection-item">Thumbnail: ${info.snippet.thumbnails.default.url}</li>
             <li class="collection-item">ChannelName: ${info.snippet.channelTitle}</li>
             <li class="collection-item">Date: ${info.snippet.publishedAt}</li>
-          </ul>
-        <p>${info.snippet.description}</p>
+            <li class="collection-item">Description: ${info.snippet.description}</li>
+        </ul>
         </div>
       </div>
         <br><br>
