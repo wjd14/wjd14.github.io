@@ -175,20 +175,37 @@ function logResults(response){
       `;
       */
      var i;
-     var output = ``;
+     var output = `
+     .flexcontainer {
+      display: flex;
+      align-items: center;
+    }
+    @media (max-width: 320px) {
+      .flexcontainer {
+      display: block;
+      }
+    }
+     
+      `;
      for(i = 0; i < 24; i++){
        console.log('its working');
        var info = data.result.items[i];
        var imurl = String(info.snippet.thumbnails.default.url);
        output = output + `
-        <img src= ${imurl}>
-        <ul class="collection">
-          <li class="collection-item"><b><font size="6">Title: ${info.snippet.title}</font></b></li>
-          <li class="collection-item">Thumbnail: ${info.snippet.thumbnails.default.url}</li>
-          <li class="collection-item">ChannelName: ${info.snippet.channelTitle}</li>
-          <li class="collection-item">Date: ${info.snippet.publishedAt}</li>
-        </ul>
+       <div class="flexcomtainer">
+        <div>
+          <img src= ${imurl} height="320" width="180">
+        </div>
+        <div>
+          <ul class="collection">
+            <li class="collection-item"><b><font size="6">Title: ${info.snippet.title}</font></b></li>
+            <li class="collection-item">Thumbnail: ${info.snippet.thumbnails.default.url}</li>
+            <li class="collection-item">ChannelName: ${info.snippet.channelTitle}</li>
+            <li class="collection-item">Date: ${info.snippet.publishedAt}</li>
+          </ul>
         <p>${info.snippet.description}</p>
+        </div>
+      </div>
       `;
      }
       
