@@ -184,7 +184,7 @@ function logResults(response){
        
        <div style="clear: left;">
         <p style="float: left;">
-          <img class = "result" src= ${imurl} height="180" width="320" id="image' + ${i} + '" onclick="videoClicked(${info}, ${i})">
+          <img class = "result" src= ${imurl} height="180" width="320" id="image' + ${i} + '" onclick="videoClicked(${info})">
         </p>
         <p><b><font size="4"> Title: ${info.snippet.title}</font></b></p>
         <p> Channel: ${info.snippet.channelTitle}</p>
@@ -201,8 +201,8 @@ function logResults(response){
     searchData.innerHTML = output;
   }
 
-  function videoClicked(info, num) {
-    console.log('Video ' + num + ' was clicked');
+  function videoClicked(info) {
+    //console.log('Video ' + num + ' was clicked');
     console.log(info.id.videoId);
   }
 </script>
