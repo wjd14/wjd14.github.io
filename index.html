@@ -176,7 +176,7 @@ function logResults(response){
       `;
       */
      var i;
-     var output = ``;
+     var search_output = ``;
      for(i = 0; i < 25; i++){
        console.log('its working');
        var info = data.result.items[i];
@@ -196,10 +196,17 @@ function logResults(response){
         <br>
       `;
      }
-      
+     var video_output =`
+    
+    `;
 
     const searchData = document.getElementById('search-data');
-    searchData.innerHTML = output;
+    searchData.innerHTML = search_output;
+
+    const videoPlayer = document.getElementById('video-player');
+    videoPlayer.innerHTML = video_output;
+
+
   }
 
   function videoClicked(num) {
