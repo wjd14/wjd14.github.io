@@ -130,6 +130,7 @@ function buildAndMakeApiRequest(requestMethod, path, params, properties) {
   }
 
 function logResults(response){
+  array_of_results = response;
   console.log(response.result.items[0]);
   console.log("Success");
 }
@@ -184,7 +185,7 @@ function logResults(response){
        
        <div style="clear: left;">
         <p style="float: left;">
-          <img class = "result" src= ${imurl} height="180" width="320" id="image' + ${i} + '" onclick="videoClicked(${info})">
+          <img class = "result" src= ${imurl} height="180" width="320" id="image' + ${i} + '" onclick="videoClicked(${i})">
         </p>
         <p><b><font size="4"> Title: ${info.snippet.title}</font></b></p>
         <p> Channel: ${info.snippet.channelTitle}</p>
@@ -201,9 +202,9 @@ function logResults(response){
     searchData.innerHTML = output;
   }
 
-  function videoClicked(info) {
-    //console.log('Video ' + num + ' was clicked');
-    console.log(info.id.videoId);
+  function videoClicked(num, info) {
+    console.log('Video ' + num + ' was clicked');
+    console.log(array_of_results.result.items[i].id.videoId);
   }
 </script>
 
