@@ -183,7 +183,7 @@ function logResults(response){
        
        <div style="clear: left;">
         <p style="float: left;">
-          <img class = "result" src= ${imurl} height="180" width="320" id="image' + ${i} + '" onclick="videoClicked(${i})">
+          <img class = "result" src= ${imurl} height="180" width="320" id="image' + ${i} + '" onclick="videoClicked(${i}, ${data})">
         </p>
         <p><b><font size="4"> Title: ${info.snippet.title}</font></b></p>
         <p> Channel: ${info.snippet.channelTitle}</p>
@@ -200,12 +200,19 @@ function logResults(response){
     searchData.innerHTML = output;
   }
 
-  function videoClicked(num) {
+  function videoClicked(num, data) {
     console.log('Video ' + num + ' was clicked');
   }
 </script>
 
 <button id="execute-search-button">Search</button>
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+
+
 
 <section>
 	<div class="container">
