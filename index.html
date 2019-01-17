@@ -204,8 +204,28 @@ function logResults(response){
 
   function videoClicked(num) {
     console.log('Video ' + num + ' was clicked');
-    console.log(array_of_results.result.items[num].id.videoId);
+    var id = array_of_results.result.items[num].id.videoId
+    console.log('ID:' + id);
+
+    var video_output = `
+    <center>
+    <iframe width="533" height="400"
+    src="https://www.youtube.com/embed/${id}" allowfullscreen>
+    </iframe>
+    </center>
+
+    `;
+    var search_output =`
+    
+    `;
+    const searchData = document.getElementById('search-data');
+    searchData.innerHTML = search_output;
+
+    const videoPlayer = document.getElementById('video-player');
+    videoPlayer.innerHTML = video_output;
   }
+
+  
 </script>
 
 <button id="execute-search-button">Search</button>
@@ -227,9 +247,7 @@ function logResults(response){
 					</form>
         </div>
         <div id="video-player">
-        <iframe width="420" height="315"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen>
-        </iframe>
+        
         </div>
         <br>
         <br>
