@@ -1,0 +1,38 @@
+:root {
+  --primary-dark: rgb(65, 65, 65);
+  --primary-light: rgb(255, 255, 245);
+  --secondary-light: rgb(255, 255, 225);
+  --max-width: 70ch;
+}
+
+html {
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+  max-width: var(--max-width);
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+/* Only include padding if the code tag is in a pre tag. */
+pre > code {
+  padding: 0.5em;
+}
+
+pre {
+  background-color: var(--secondary-light);
+  border: 0.1em solid var(--primary-dark);
+
+  /* Horizontal scroll for blocks of code. */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/* Responsive image. */
+img {
+  height: auto;
+  max-width: calc(var(--max-width) / 2);
+  width: 100%;
+}
