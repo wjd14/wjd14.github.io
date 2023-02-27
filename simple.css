@@ -8,7 +8,7 @@
 
 html {
   color: var(--primary-dark);
-  background-color: var(--temp-color);
+  background-color: var(--secondary-light);
   max-width: var(--max-width);
   padding: 3em 1em;
   margin: auto;
@@ -22,7 +22,7 @@ pre > code {
 }
 
 pre {
-  background-color: var(--secondary-light);
+  background-color: var(--temp-color);
   border: 0.1em solid var(--primary-dark);
 
   /* Horizontal scroll for blocks of code. */
