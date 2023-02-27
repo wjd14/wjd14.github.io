@@ -7,7 +7,7 @@
 }
 
 html {
-  color: var(--temp-color);
+  color: var(--primary-dark);
   background-color: var(--temp-color);
   max-width: var(--max-width);
   padding: 3em 1em;
