@@ -7,8 +7,8 @@
 }
 
 html {
-  color: var(--primary-dark);
-  background-color: var(--secondary-light);
+  color: var(--temp-color);
+  background-color: var(--temp-color);
   max-width: var(--max-width);
   padding: 3em 1em;
   margin: auto;
