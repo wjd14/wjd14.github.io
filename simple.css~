@@ -2,13 +2,12 @@
   --primary-dark: rgb(65, 65, 65);
   --primary-light: rgb(255, 255, 245);
   --secondary-light: rgb(255, 255, 225);
-  --temp-color: rgb(170, 147, 173);
   --max-width: 70ch;
 }
 
 html {
   color: var(--primary-dark);
-  background-color: var(--temp-color);
+  background-color: var(--primary-light);
   max-width: var(--max-width);
   padding: 3em 1em;
   margin: auto;
