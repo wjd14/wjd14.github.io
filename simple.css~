@@ -2,12 +2,13 @@
   --primary-dark: rgb(65, 65, 65);
   --primary-light: rgb(255, 255, 245);
   --secondary-light: rgb(255, 255, 225);
+  --temp-color: rgb(170, 147, 173);
   --max-width: 70ch;
 }
 
 html {
   color: var(--primary-dark);
-  background-color: var(--primary-light);
+  background-color: var(--temp-color);
   max-width: var(--max-width);
   padding: 3em 1em;
   margin: auto;
@@ -21,7 +22,7 @@ pre > code {
 }
 
 pre {
-  background-color: var(--secondary-light);
+  background-color: var(--temp-color);
   border: 0.1em solid var(--primary-dark);
 
   /* Horizontal scroll for blocks of code. */
