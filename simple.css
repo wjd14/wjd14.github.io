@@ -70,7 +70,7 @@ pre {
 
 /* Responsive image. */
 img {
-  /*height: auto;*/
-  /*max-width: calc(var(--max-width) / 2);*/
-  /*width: 100%;*/
+  height: auto;
+  max-width: calc(var(--max-width) / 2);
+  width: 100%;
 }
