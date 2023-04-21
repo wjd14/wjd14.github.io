@@ -28,7 +28,8 @@
     <!-- Main page containing picture, about me info, etc. -->
     
     <main>
-      
+
+      <p>test</p>
 
 
       <img src="will_doyle_picture.jpg" style="float:right; border: 5px solid #555">

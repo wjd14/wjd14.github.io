@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./simple.css">
-    <title>Will Doyle Home</title>
+    <title>Quotes</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 
@@ -17,28 +17,22 @@
   </head>
   <body>
 
-    <!-- This list is the site navigation menu -->  
+    <!-- This list is the site navigation menu -->
+    
     <ul class = "menu">   
-      <li><a href="./index.html" class="active">Home</a></li>   
+      <li><a href="./index.html">Home</a></li>   
       <li><a href="./research.html">Research</a></li>
       <li><a href="./music.html">Music</a></li>
       <li><a href="./artwork.html">Artwork</a></li>
-      <li><a href="./quotes.html">Quotes</a></li>
+      <li><a href="./quotes.html" ">Quotes</a></li>
       <li><a href="./resume.html">Resume</a></li>
-      <li><a href="./essays.html">Essays</a></li>
+      <li><a href="./essays.html"class="active>Essays</a></li>
     </ul>
     
-
-    <!-- Main page containing picture, about me info, etc. -->
     
     <main>
 
-      <p>Welcome to my website. I am a prospective graduate student at the University of Texas at Austin. I am interested in most things.</p>
-
-
-      <img src="will_doyle_picture.jpg" style="float:right; border: 5px solid #555">
-      
-  
+      <p></p>
   
     </main>
     
