@@ -14,6 +14,7 @@ html {
  /*margin: 0px;*/
   line-height: 1.75;
   font-size: 1.25em;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 body {
@@ -30,10 +31,11 @@ main {
 }
 
 .menu {
-    width: 60px; 
+    width: 100px; 
     list-style-type: none; /* removing bullets from list */
     padding: 0px;
     margin: 0px;
+    float:left;
 }
 /* Styling the links */
 .menu a {
