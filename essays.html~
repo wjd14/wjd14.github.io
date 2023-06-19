@@ -24,9 +24,9 @@
       <li><a href="./research.html">Research</a></li>
       <li><a href="./music.html">Music</a></li>
       <li><a href="./artwork.html">Artwork</a></li>
-      <li><a href="./quotes.html" ">Quotes</a></li>
+      <li><a href="./quotes.html">Quotes</a></li>
       <li><a href="./resume.html">Resume</a></li>
-      <li><a href="./essays.html"class="active>Essays</a></li>
+      <li><a href="./essays.html"class="active">Essays</a></li>
     </ul>
     
     
