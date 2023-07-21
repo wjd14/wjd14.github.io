@@ -25,7 +25,7 @@ body {
 
 }
 main {
-    /*nice margins so things don't get too close to edges*/
+    /*nice margins so things don't get too close to edges... adjusted to look better on mobile.*/
     margin-left: 170px;
     margin-right: 20px;
 }
