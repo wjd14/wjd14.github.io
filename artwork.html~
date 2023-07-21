@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./simple.css">
-    <title>Will Doyle Resume</title>
+    <title>Will Doyle Music</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 
@@ -23,17 +23,16 @@
       <li><a href="./index.html">Home</a></li>   
       <li><a href="./research.html">Research</a></li>
       <li><a href="./music.html">Music</a></li>
-      <li><a href="./artwork.html">Artwork</a></li>
+      <li><a href="./artwork.html" class="active">Artwork</a></li>
       <li><a href="./quotes.html">Quotes</a></li>
-      <li><a href="./resume.html" class="active">Resume</a></li>
+      <li><a href="./resume.html">Resume</a></li>
       <li><a href="./essays.html">Essays</a></li>
-      <li><a href="./fiction.html">Fiction</a></li>
     </ul>
     
     
     <main>
 
-      <p><a href="./Will_Doyle_2023_Public_Resume.pdf">Resume</a></p>
+      <p></p>
   
     </main>
     
