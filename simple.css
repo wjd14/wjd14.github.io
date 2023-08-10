@@ -24,7 +24,7 @@ body {
     background-attachment: fixed;
 
     /*test of font size...*/
-    font-size: 1.4vw;
+    font-size: calc(15px + 0.390625vw);
 }
 
 

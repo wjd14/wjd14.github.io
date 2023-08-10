@@ -23,11 +23,15 @@ body {
     background-repeat:no-repeat;
     background-attachment: fixed;
 
+    /*test of font size...*/
+    font-size: 1.4vw;
 }
+
+
 main {
-    /*nice margins so things don't get too close to edges*/
-    margin-left: 200px;
-    margin-right: 140px;
+    /*nice margins so things don't get too close to edges... adjusted to look better on mobile.*/
+    margin-left: 170px;
+    margin-right: 20px;
 }
 
 .menu {
