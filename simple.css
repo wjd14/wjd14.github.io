@@ -61,7 +61,7 @@ main {
     color: white;
     padding-left: 5px; 
     text-decoration: none; 
-    font-size: calc(15px + 0.390625vw);
+    font-size: calc(15px + 0.2vw);
 }
 .menu a:hover {
     background-color: #565656;
