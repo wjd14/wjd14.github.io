@@ -26,14 +26,16 @@
       <li><a href="./artwork.html">Artwork</a></li>
       <li><a href="./quotes.html">Quotes</a></li>
       <li><a href="./resume.html">Resume</a></li>
-      <li><a href="./essays.html"class="active">Essays</a></li>
+      <li><a href="./essays.html" class="active">Essays</a></li>
+      <li><a href="./fiction.html">Fiction</a></li>
     </ul>
     
     
     <main>
 
-      <p></p>
-  
+      <p><a href="https://medium.com/@will.doyle_80523/the-tic-tac-toe-of-engineering-startups-and-science-1a908044685e"> The Tic-Tac-Toe of Engineering, Startups, and Science</a></p>
+
+
     </main>
     
   
